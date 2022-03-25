@@ -5,23 +5,33 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
-
-    public Anime(String nome, String tipo, int episodios, String genero){
-        System.out.println("Construtor");
+    //vantagens do construtor: te forçam a seguir algumas regras
+    public Anime(String nome, String tipo, int episodios, String genero) {
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
         this.genero = genero;
     }
-    //vantagens do construtor: te forçam a seguir algumas regras
+
+    public Anime(String nome, String tipo, int episodios, String genero, String estudio) {
+        this(nome, tipo, episodios, genero);//Obrigatoriamente tem que ser a primeira linha do metodo!!
+        this.estudio = estudio;
+    }
+
+    public Anime() {
+
+    }
 
 
-    public void imprime(){
+    public void imprime() {
         System.out.println(this.nome);
         System.out.println(this.tipo);
         System.out.println(this.episodios);
         System.out.println(this.genero);
+        System.out.println(this.estudio);
     }
 
     public String getNome() {
