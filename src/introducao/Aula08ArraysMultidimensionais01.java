@@ -1,6 +1,6 @@
 package introducao;
 
-public class Aula08ArraysMultidimensionais {
+public class Aula08ArraysMultidimensionais01 {
     public static void main(String[] args) {
         //meses e dias do ano
         int[][] dias = new int[3][3];
