@@ -1,4 +1,4 @@
-package orientacaoAObjetos.CsobrecargaMetodos.dominio;
+package orientacaoAObjetos.Dconstrutores.dominio;
 
 public class Anime {
     private String nome;
@@ -6,16 +6,16 @@ public class Anime {
     private int episodios;
     private String genero;
 
-    public void init(String nome, String tipo, int episodios) {
+
+    public Anime(String nome, String tipo, int episodios, String genero){
+        System.out.println("Construtor");
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
-    }
-    public void init(String nome, String tipo, int episodios, String genero) {
-        this.init(nome, tipo, episodios);
         this.genero = genero;
-        //para ter uma sobrecarga de metodos com mesmo nome, a quantidade de parametros ou os tipos tem que ser diferentes.
     }
+    //vantagens do construtor: te forçam a seguir algumas regras
+
 
     public void imprime(){
         System.out.println(this.nome);
