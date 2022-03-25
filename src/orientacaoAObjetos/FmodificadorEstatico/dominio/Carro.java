@@ -3,7 +3,7 @@ package orientacaoAObjetos.FmodificadorEstatico.dominio;
 public class Carro {
     private String nome;
     private double velicidadeMaxima;
-    public static double velicidadeLimite = 250;
+    private static double velicidadeLimite = 250;
 
     public Carro(String nome, double velicidadeMaxima) {
         this.nome = nome;
@@ -15,6 +15,12 @@ public class Carro {
         System.out.println("Nome " + this.nome);
         System.out.println(" Velocidade Maxima " + this.velicidadeMaxima);
         System.out.println(" Velocidade Limite " + Carro.velicidadeLimite);
+    }
+    public static void setVelicidadeLimite(double velicidadeLimite){
+        Carro.velicidadeLimite = velicidadeLimite;
+    }
+    public static double getVelicidadeLimite(){
+        return Carro.velicidadeLimite;
     }
 
     public String getNome() {
@@ -32,5 +38,9 @@ public class Carro {
     public void setVelicidadeMaxima(double velicidadeMaxima) {
         this.velicidadeMaxima = velicidadeMaxima;
     }
-
 }
+//Porque metodos static não podem acessar variaveis de instancia?
+//quando vc utiliza static pode existir a possibilidade de nao ter um objeto em memoria;
+
+//quando utilizar um metodo static?
+//As boas praticas dizem que quando os metodos não acessam um atributo da instancia.

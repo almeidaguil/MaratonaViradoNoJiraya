@@ -9,7 +9,7 @@ public class CarroTest01 {
         Carro carro3 = new Carro("Audi", 290);
 
        // carro1.setVelicidadeLimite(180);//muda para todos os carros, pois é do tipo static
-        Carro.velicidadeLimite = 180;
+        Carro.setVelicidadeLimite(180);
 
         carro1.imprime();
         carro2.imprime();
