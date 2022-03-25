@@ -6,7 +6,7 @@ public class PessoaTest01 {
     public static void main(String[] args) {
         Pessoa pessoa = new Pessoa();
         pessoa.setNome("Alice");
-        pessoa.setIdade(-1);
+        pessoa.setIdade(10);
 
         pessoa.imprime();
 
