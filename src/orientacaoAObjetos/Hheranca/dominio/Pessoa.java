@@ -1,9 +1,11 @@
 package orientacaoAObjetos.Hheranca.dominio;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    //Protected vai da acesso direto a variavel a todas as subclasses, independente de onde elas tiverem, porém
+//todas as classes que estão no mesmo pacote também vão ter acesso
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
 
     public void imprime() {
         System.out.println(this.nome);
