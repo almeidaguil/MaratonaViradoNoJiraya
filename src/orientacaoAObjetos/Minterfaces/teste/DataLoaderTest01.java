@@ -17,3 +17,4 @@ public class DataLoaderTest01 {
         fileLoader.checkPermission();
     }
 }
+//Não é possivel criarar objetos de interfaces (ex.: new DataLoades();)
