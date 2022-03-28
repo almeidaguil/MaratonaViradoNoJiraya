@@ -1,16 +1,21 @@
 package orientacaoAObjetos.LclassesAbstratas.dominio;
 
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa{
     protected String nome;
     protected double salario;
+
+    public abstract void calculaBonus();
+
+    @Override
+    public void imprime() {
+        System.out.println("Imprimindo");
+    }
 
     public Funcionario(String nome, double salario) {
         this.nome = nome;
         this.salario = salario;
         calculaBonus();
     }
-
-    public abstract void calculaBonus();
 }
 
 //classes abstratas foram criadas para resolver o problema de designer(desenho de codigo)
