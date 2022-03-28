@@ -5,14 +5,11 @@ public class SeminarioExercicio {
     private AlunoExercicio[] alunos;
     private LocalExercicio local;
 
-    public SeminarioExercicio(String titulo) {
+    public SeminarioExercicio(String titulo, LocalExercicio local) {
         this.titulo = titulo;
+        this.local = local;
     }
 
-    public SeminarioExercicio(String titulo, AlunoExercicio[] alunos) {
-        this.titulo = titulo;
-        this.alunos = alunos;
-    }
 
     public SeminarioExercicio(String titulo, AlunoExercicio[] alunos, LocalExercicio local) {
         this.titulo = titulo;

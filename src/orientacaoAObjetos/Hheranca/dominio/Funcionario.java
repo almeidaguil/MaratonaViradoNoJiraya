@@ -1,0 +1,19 @@
+package orientacaoAObjetos.Hheranca.dominio;
+
+public class Funcionario extends Pessoa {
+    private double salario;
+
+    @Override
+    public void imprime() {
+        super.imprime();//Usando o super.xxxx ele faz a sobrescrita do metodo chamado e é possivel fazer a adição
+        System.out.println("R$" + this.salario);
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+}
