@@ -2,8 +2,7 @@ package orientacaoAObjetos.Kenum.teste;
 
 import orientacaoAObjetos.Kenum.dominio.Cliente;
 import orientacaoAObjetos.Kenum.dominio.TipoCliente;
-
-import static orientacaoAObjetos.Kenum.dominio.Cliente.*;
+import orientacaoAObjetos.Kenum.dominio.TipoPagamento;
 
 public class ClienteTest01 {
     public static void main(String[] args) {
@@ -12,6 +11,9 @@ public class ClienteTest01 {
 
         System.out.println(cliente);
         System.out.println(cliente1);
+
+        System.out.println(TipoPagamento.DEBITO.calcularDesconto(100));
+        System.out.println(TipoPagamento.CREDITO.calcularDesconto(100));
 
     }
 }
