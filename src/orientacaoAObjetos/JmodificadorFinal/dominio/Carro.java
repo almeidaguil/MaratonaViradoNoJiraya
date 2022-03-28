@@ -5,6 +5,10 @@ public class Carro {
     public static final double VELOCIDADE_FINAL = 250;
     public final Comprador COMPRADOR = new Comprador();
 
+    public final void imprime(){//faz com que o metodo não possa ser sobrescrito posteriormente!
+        System.out.println(this.nome);
+    }
+
     public Comprador getCOMPRADOR() {
         return COMPRADOR;
     }
