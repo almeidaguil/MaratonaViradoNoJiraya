@@ -10,7 +10,7 @@ public class WrapperTest01 {
     double doubleP = 1;
     char charP = 'P';
     boolean booleanP = false;
-    //Wrappers
+    //Wrappers - autoboxing
     Byte byteW = 1;
     Short shortW = 1;
     Integer intW = 1;
@@ -20,6 +20,7 @@ public class WrapperTest01 {
     Character charW = 'W';
     Boolean booleanW = false;
 
+    int i = intW; //unboxing
 
 }
 /*WRAPPERS
