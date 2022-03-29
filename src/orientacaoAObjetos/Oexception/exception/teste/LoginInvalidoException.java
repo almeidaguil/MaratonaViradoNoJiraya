@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Oexception.exception;
+package orientacaoAObjetos.Oexception.exception.teste;
 
 public class LoginInvalidoException extends Exception{
 

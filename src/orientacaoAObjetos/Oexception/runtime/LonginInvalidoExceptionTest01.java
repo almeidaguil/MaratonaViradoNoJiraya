@@ -1,6 +1,6 @@
 package orientacaoAObjetos.Oexception.runtime;
 
-import orientacaoAObjetos.Oexception.exception.LoginInvalidoException;
+import orientacaoAObjetos.Oexception.exception.teste.LoginInvalidoException;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Oexception.exception;
+package orientacaoAObjetos.Oexception.exception.teste;
 
 import orientacaoAObjetos.Oexception.exception.dominio.Leitor1;
 import orientacaoAObjetos.Oexception.exception.dominio.Leitor2;

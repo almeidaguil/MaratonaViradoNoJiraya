@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Oexception.exception;
+package orientacaoAObjetos.Oexception.exception.teste;
 
 import java.io.File;
 import java.io.IOException;
