@@ -1,6 +1,5 @@
 package orientacaoAObjetos.Npolimorfismo.servico;
 
-import orientacaoAObjetos.Npolimorfismo.dominio.Computador;
 import orientacaoAObjetos.Npolimorfismo.dominio.Produto;
 import orientacaoAObjetos.Npolimorfismo.dominio.Tomate;
 
@@ -11,6 +10,10 @@ public class CalculadoraImposto {
         System.out.println("Produto: " + produto.getNome());
         System.out.println("Preço: R$" + produto.getValor());
         System.out.println("Impostoa ser pago: R$" + imposto);
+        if (produto instanceof Tomate) {//se produto for uma instancia de Tomete faça...
+            Tomate tomate = (Tomate) produto;
+            System.out.println(tomate.getDataDeValidade());
+        }
     }
 
 //    public static void CalcularImpostoComputador(Computador computador) {
