@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Oexception.teste;
+package orientacaoAObjetos.Oexception.error;
 
 public class StackOverFlow01 {
     public static void main(String[] args) {
