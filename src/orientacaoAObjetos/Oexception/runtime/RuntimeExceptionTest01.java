@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Oexception.runtime.teste;
+package orientacaoAObjetos.Oexception.runtime;
 
 public class RuntimeExceptionTest01 {
     public static void main(String[] args) {
