@@ -1,6 +1,6 @@
 package orientacaoAObjetos.Oexception.runtime;
 
-public class RuntimeExceptinTest03 {
+public class RuntimeExceptionTest03 {
     public static void main(String[] args) {
         abreConexao2();
     }
