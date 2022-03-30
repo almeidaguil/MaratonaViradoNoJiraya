@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Rdates.teste;
+package orientacaoAObjetos.Sformatacao.teste;
 
 import java.text.DateFormat;
 import java.util.Calendar;

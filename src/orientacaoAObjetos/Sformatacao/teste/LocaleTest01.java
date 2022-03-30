@@ -1,10 +1,10 @@
-package orientacaoAObjetos.Rdates.teste;
+package orientacaoAObjetos.Sformatacao.teste;
 
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class LocalTest01 {
+public class LocaleTest01 {
     public static void main(String[] args) {
         Locale localeItaly = new Locale("it", "IT");
         Locale localeCH = new Locale("it", "CH");
