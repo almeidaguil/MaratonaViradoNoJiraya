@@ -1,6 +1,6 @@
 package orientacaoAObjetos.Qstring.teste;
 
-public class StringPerformaceTest {
+public class StringPerformaceTest01 {
     public static void main(String[] args) {
         long inicio = System.currentTimeMillis();
         concatString(30000);
