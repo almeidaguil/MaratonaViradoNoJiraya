@@ -2,6 +2,7 @@ package orientacaoAObjetos.Rdates.teste;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class PeriodTest01 {
     public static void main(String[] args) {
@@ -18,6 +19,11 @@ public class PeriodTest01 {
         System.out.println(p3);//P406D
         System.out.println(p4);//P12M
         System.out.println(p5);//P2Y
+        System.out.println(p3.getMonths());
+        System.out.println(Period.between(now, now.plusDays(p3.getDays())).getMonths());
+        System.out.println(now.until(now.plusDays(p3.getDays()), ChronoUnit.MONTHS));//converte para meses
+        System.out.println(now.until(now.plusDays(p3.getDays()), ChronoUnit.DAYS));//converte para dias
+
     }
 }
 //Baseado na data
