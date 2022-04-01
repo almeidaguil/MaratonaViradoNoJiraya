@@ -1,4 +1,4 @@
-package orientacaoAObjetos.Vio;
+package orientacaoAObjetos.Vio.test;
 
 import java.io.BufferedWriter;
 import java.io.File;
