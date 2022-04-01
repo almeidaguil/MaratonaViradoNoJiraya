@@ -27,6 +27,8 @@ public class PatternMatcherTest05 {
     }
 }
 /*EXPRESSÕES REGULARES ou REGEX
+SITE PARA AJUDA: https://regexr.com
+
 Meta caractere: como se fosse um "atalho" para conseguir pegar determinados caracteres
 [] = o que fica dentro dos colchetes são "ranges"
 [a-zA-Z]vai buscar todas as letrar maiusculas e minusculas
@@ -38,7 +40,9 @@ QUANTIFICADORES: são caracteres dão poder em pegar determinada expressão na q
 {n,m} = intervalo de x a y
 () = agrupamento
 | = ou  ex.  o(v|c)o = vai dar match em ovo OU oco
-$ fim da linha
+$ = fim da linha
+^ = achar exatamente o que quer no começo da linha
+[^abc] = negação, vai retornar tudo que não for abc seguindo o exemplo.(também é case sensitive, só ignora o tipo declarado)
 
 para escrever numeros em hexadecimal no java, deve começar com 0x ou 0X
  */
