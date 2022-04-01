@@ -15,3 +15,4 @@ public class NormalizacaTest01 {
         System.out.println(path2.normalize());
     }
 }
+//quando se tem dois caminhos e um deles diz, por exemplo, que tem que voltar duas pastas
