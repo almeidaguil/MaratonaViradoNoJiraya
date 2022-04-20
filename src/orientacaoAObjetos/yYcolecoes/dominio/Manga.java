@@ -2,7 +2,7 @@ package orientacaoAObjetos.yYcolecoes.dominio;
 
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements Comparable<Manga> {
     private Long id;
     private String nome;
     private double preco;
@@ -59,5 +59,25 @@ public class Manga {
 
     public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(Manga outroManga) {
+        // retorna negativo se this < outroManga
+        // se this == outroManga, retorna 0
+        // retorna positivo se this > outroManga
+
+        return this.id.compareTo(outroManga.getId());
+
+//        utilizando um tipo primitivo deve-se fazer assim:
+//        if (this.id < outroManga.getId()) {
+//            return -1;
+//        } else if (this.id.equals(outroManga.getId())) {
+//            return 0;
+//        } else {
+//            return 1;
+//        }
+//        OU
+//        return Double.valueOf(preco).compare(outroManga.getPreco());
     }
 }
