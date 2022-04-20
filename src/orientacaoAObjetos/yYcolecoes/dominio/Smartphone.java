@@ -18,6 +18,11 @@ public class Smartphone {
         return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
     }
 
+    @Override
+    public int hashCode() {
+        return serialNumber == null ? 0 : this.serialNumber.hashCode();
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }
@@ -40,4 +45,10 @@ public class Smartphone {
 3- Transitividade: para x, y, z, diferentes de null. Se x.equals(y) == true, e x.equals(y) == true, logo y.equals(z) == true
 4- Consistente: x.equals(x) sempre retorna true se x for diferente de null
 5- para x diferente de null, x.equals(null) tem que retornar falso
+ */
+/*REGRAS HASHCODE
+1- se x.equals(y) == true, y.hashcode(x) == x.hashcode()
+2 - y.hashcode() == x.hashcode() não necessariamente o equals de y.equals(x) tem que ser true
+3- x.equals(y) == false
+4- y.hashcode() != x.hashcode() , x.equals(y) deverá ser falso
  */
