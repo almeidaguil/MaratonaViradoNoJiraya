@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MapTest01 {
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap<>();//necessita de chave* e valor**
+        Map<String, String> map = new HashMap<>();//necessita de chave* e valor**; LinkHashMap mantem a ordem de inserção
         map.put("teklado", "teclado");
         map.put("mauze", "mouse");
         map.put("vc", "você");
