@@ -20,5 +20,5 @@ public class SetTest01 {
         }
     }
 }
-/*Set não permite elamentos duplicados dentro da coleção e não é indexado
+/*Set não permite elementos duplicados dentro da coleção e não é indexado
 * Hashset faz a organização, mas não tem como garantir como estarão ordenados  */
