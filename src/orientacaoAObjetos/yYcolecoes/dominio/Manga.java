@@ -67,7 +67,7 @@ public class Manga implements Comparable<Manga> {
         // se this == outroManga, retorna 0
         // retorna positivo se this > outroManga
 
-        return this.id.compareTo(outroManga.getId());
+        return this.nome.compareTo(outroManga.getNome());
 
 //        utilizando um tipo primitivo deve-se fazer assim:
 //        if (this.id < outroManga.getId()) {
